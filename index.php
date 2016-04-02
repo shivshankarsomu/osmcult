@@ -17,7 +17,6 @@
 										</ul>
 									</div>
 								</div>
-                        <!-- <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span> -->
                     </div>
                 </div>
             </div>
