@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+body {
+  background: #eee !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 30px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-hide{display: none;}
+.error-msg {text-align: left !important;color: #D0021B;}
+.mar-top20{margin-top: 20px;}
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.text-bold{font-weight: bold;}
+.form-label{text-align: left !important;padding-bottom: 5px;}
+.error-msg {text-align: left !important;color: #D0021B;}
+.disp-none{display: none;}
+.text-black{color: #222 !important;}
+.text-left{text-align: left !important;}
+.pad-left0{padding-left: 0 !important;}
+.form-radio-txt{padding-left: 5px;font-size: 15px;}
+.form-others{padding-top: 10px;}
+.disp-none-imp{display: none !important;}
+.bg-black{background-color: #44494b;}
+.bg-white{background-color: #fff;}
+.jobs-lst{padding-top: 20px;}
+.jobs-lst-itm{width: 60% !important;float: left;padding-top: 13px;}
+.pad-left20{padding-left: 20px;}
+.float-right{float: right;}
+.job_id{outline: none;color: #333;}
+.job_id:hover{text-decoration: underline;color: #333;}
+.job-type-symbol{color: #f14e3b;}
+.osm-font-12{font-size: 12px;}
+.osm-font-16{font-size: 16px;}
+.osm-font-18{font-size: 18px;}
+.mar-right20{margin-right: 20px;}
+.navtab-ancr{border: 0!important;color: #000!important;padding: 5px 20px !important;background: #d7d7d7!important;border-radius: 30px !important;}
+.osm-nav-bar{border: 0 !important;}
+.jobs_table{border-collapse: collapse;width: 90%;margin-top: 35px;}
+.jobs_table th, td {
+    text-align: left;
+    padding: 8px;
+
+}
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 1.0714285714285714em;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.7;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  background: #ebeeef;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-tabs > li > a:hover {
+  border-color: #dedede #dedede #dddddd;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.nav-tabs > li.active > a {
+  background: #44494b !important;
+  color: #fff !important;
+}
+.jobs_table tr:nth-child(even){background-color: #f9f9f9;}
+
+.jobs_table th {
+    background-color: #4CAF50;
+    color: white;
+}
