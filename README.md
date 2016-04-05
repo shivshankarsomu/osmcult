@@ -1,2 +1,2 @@
 # osmcult
-OSMCULT Website code
+OSMCULT Website code Learn Earn and Repeat
