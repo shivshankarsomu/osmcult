@@ -3,9 +3,10 @@
 <div class="row margin0" style="position:relative;">
    <div ng-controller="formCtrl" style="padding-top:100px;" class="col-xs-6 col-xs-offset-3">
 	<form name="pincode_form"  novalidate id="referral-form" method="post">
-		{{create_pin(6622);}}
-  	   	<h3 class="pad-left0">Add Pincode</h3>
 		<div class="row">
+			<h3 class="pad-left0">Add Pincode</h3>
+			<div class="alert alert-success disp-none" id="pincode_success">Pincode added successfully</div>
+			<div class="alert alert-danger disp-none" id="pincode_error"></div>
 			<div class="col-lg-12 pad-left0">
 				<label for="PIN" class="text-bold form-label">Pincode </label>
 			</div>
@@ -17,6 +18,7 @@
 					   <div ng-show="(!pincode_form.uPincode.$valid ||pincode_form.uPincode.$error.pattern) && !pincode_form.uPincode.$error.required && addpin.pin!=''" class="error-msg">This is not a valid Pincode.</div>
 					</div>
 				</div>
+			</div>
 			<div class="col-lg-12 pad-left0 form-others">
 				<label for=location class="text-bold form-label">Location </label>
 			</div>
@@ -29,9 +31,8 @@
 				</div>
 			</div>
 			<div class="col-lg-12 pad-left0 form-others">
-				<button type="submit" class="btn btn-success" ng-click="create_pin(addpin);">Add</button>
+				<button type="submit" class="btn btn-primary text-bold" ng-click="insert_pin(addpin);">Submit</button>
 			</div>
-		</div>
 	</form>
 </div>
 </div>
