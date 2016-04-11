@@ -24,6 +24,22 @@ $scope.test             ="shiv";
 
             }
         });
+        $scope.create_pin = function(addpin){
+            console.log("hello");
+            // var m_data = new FormData();
+            // m_data.append('Pincode',$scope.addpin.pin);
+            // m_data.append('location',$scope.addpin.Loc);
+            // console.log(m_data);
+            // $.ajax({
+            //     method  : 'POST',
+            //     url     : '../db/create_Pin.php',
+            //     data    : m_data,
+            //     processData: true,
+            //     contentType: true
+            // }).success(function(data) {
+            //     console.log(data);
+            // });
+        }
     }
 }]);
 
@@ -92,5 +108,4 @@ adminosm.controller('JobsCtrl', ['$scope','$http','$filter',function($scope,$htt
                $('.other_profiles_jobs').show();
            }
        };
-
 }]);

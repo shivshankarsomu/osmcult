@@ -193,6 +193,7 @@ body {
 .jobs-lst{padding-top: 20px;}
 .jobs-lst-itm{width: 60% !important;float: left;padding-top: 13px;}
 .pad-left20{padding-left: 20px;}
+.pad-left105{padding-left: 105px !important;}
 .float-right{float: right;}
 .job_id{outline: none;color: #333;}
 .job_id:hover{text-decoration: underline;color: #333;}
@@ -248,3 +249,4 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+footer{text-align: center;font-weight: bold;color: #fff;background: #222;margin-top:20px;padding: 20px 0;}

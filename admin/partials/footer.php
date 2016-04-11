@@ -10,5 +10,10 @@
 $('#sandbox-container input').datepicker({
 });
 </script>
+<footer>
+    <div class="footer-below">
+        Copyright &copy; OSMCULT Team
+    </div>
+</footer>
 </body>
 </html>
