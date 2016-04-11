@@ -2,7 +2,7 @@
 <?php include("partials/nav_bar.php"); ?>
 <div class="row margin0" style="position:relative;">
    <div ng-controller="JobsCtrl" style="padding-top:100px;" class="col-xs-6 col-xs-offset-3" ng-init="event.job_type = 'Promoter'">
-       <form name="create_form" id="create-form" novalidate  method="post">
+       <form name="create_form" id="create-form" novalidate  method="post" action="sucess.php">
            <label for="name" id="create_error_form" class="col-xs-12 error-msg disp-none">There are errors in the submitted form.</label>
            <div class="form-group row">
               <label for="Pincode" class="col-xs-12 text-bold form-label">Job Type</label>

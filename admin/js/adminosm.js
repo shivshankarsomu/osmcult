@@ -18,12 +18,33 @@ $scope.test             ="shiv";
             if (!data.success)
                 $("#login_form_error").show();
             else{
-                console.log(window.location.href);
                 window.location.href = window.location.href + 'alljobs.php';
                 $("#login_form_error").hide();
 
             }
         });
+    }
+        $scope.insert_pin = function(addpin){
+            var m_data = new FormData();
+            m_data.append('uPincode',$scope.addpin.pin);
+            m_data.append('uLocation',$scope.addpin.location);
+            $.ajax({
+                method  : 'POST',
+                url     : 'db/create_Pin.php',
+                data    : m_data,
+                processData: false,
+                contentType: false
+            }).success(function(data) {
+                if (!data.success){
+                    $("#pincode_success").hide();
+                    $("#pincode_error").text(data.msg);
+                    $("#pincode_error").show();
+                }
+                else{
+                    $("#pincode_error").hide();
+                    $("#pincode_success").show();
+                }
+            });
     }
 }]);
 
@@ -92,5 +113,4 @@ adminosm.controller('JobsCtrl', ['$scope','$http','$filter',function($scope,$htt
                $('.other_profiles_jobs').show();
            }
        };
-
 }]);
