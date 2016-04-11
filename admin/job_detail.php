@@ -18,7 +18,9 @@ try{
             $profile['mobile'] = $value['mobile'];
             $profile['email'] = $value['email'];
             $profile['gender'] = $value['gender'];
+					  $profile['location'] = $value['location'];
             $profile['status'] = $value['is_approved'];
+						$profile['rating'] = $value['rating'];
             array_push($jobs_profiles,$profile);
         }
 	}
@@ -31,10 +33,11 @@ catch(PDOException $e){
      <tr>
          <th class="text-bold">Name</th>
          <th class="text-bold">Mobile</th>
-         <th class="text-bold">Email</th>
+         <th class="text-bold">Location</th>
          <th class="text-bold">Gender</th>
+				 <th class="text-bold">Ratings</th>
          <th class="text-bold">Status</th>
-         <th></th>
+
     <tr>
 
 <?php
@@ -43,8 +46,9 @@ foreach ($jobs_profiles as $key => $value) {
  $url ="<a href='profile_detail.php?". $value['mobile'] ."'>";
  echo "<td>" .$url.$value['name']."</a></td>";
  echo "<td>" .$value['mobile']."</td>";
- echo "<td>" .$value['email']."</td>";
+ echo "<td>".$value['location']."</td>";
  echo "<td>" .$value['gender']."</td>";
+ echo "<td>".$value['rating'].  "</td>";
  echo "<td>" .$value['status']."</td>";
  echo "</tr>";
 }?>

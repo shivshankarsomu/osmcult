@@ -31,6 +31,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="addPincode.php">Add Pincode</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

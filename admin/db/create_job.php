@@ -96,7 +96,6 @@ try{
                     break;
         }
         $conn->exec($sql);
-        //echo date('l jS \of F Y h:i:s A',mktime(4,11,0,3,18,2016));die;
         $response_array['success'] = true;
     }
 
